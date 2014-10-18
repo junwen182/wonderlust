@@ -8,13 +8,6 @@ body {
   max-width: 1000px;
 }
 
-/* Fonts */
-
-@font-face {
-  font-family: "Pacifico";
-  src: url(fonts/pacifico.ttf) format("truetype");
-}
-
 
 /* Check In section */
 
@@ -44,5 +37,3 @@ body {
 .check-in-button:hover {
   background-color: #d4854c;
 }
-
-/* test */
