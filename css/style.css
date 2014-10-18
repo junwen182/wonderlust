@@ -1,0 +1,46 @@
+/* Layout */
+
+body {
+
+}
+
+.container {
+  max-width: 1000px;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Pacifico";
+  src: url(fonts/pacifico.ttf) format("truetype");
+}
+
+
+/* Check In section */
+
+.check-in-holder {
+  text-align: center;
+  width: 100%;
+  height: 65px;
+  border: 1px solid #ebebeb;
+  position: fixed;
+  bottom: 0;
+}
+
+.check-in-button {
+  font-family: "Pacifico";
+  color: #fff;
+  font-size: 1.7em;
+  background-color: #db8c53;
+  width: 95%;
+  margin: 8px auto;
+  border-radius: 4px;
+  padding: 5px;
+  -webkit-box-shadow: 0px 2px 0px 0px #d48146;
+  -moz-box-shadow: 0px 2px 0px 0px #d48146;
+  box-shadow: 0px 2px 0px 0px #d48146;
+}
+
+.check-in-button:hover {
+  background-color: #d4854c;
+}
