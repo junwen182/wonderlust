@@ -392,18 +392,23 @@ body {
 =================================================================*/
 
 .video-recorder-outer {
-  width: 100%;
+  width: 100% !important;
   height: 256px !important;
 }
 
 .video-recorder-view-cid_1 {
-  width: 100%;
-  height: 256px;
+  width: 100% !important;
+  height: 256px !important;
 }
 
 embed[quality="high"] {
-  width: 100%;
-  height: 256px;
+  width: 100% !important;
+  height: 256px !important;
+}
+
+.video-recorder-initial {
+  width: 100% !important;
+  height: 256px !important;
 }
 
 a[data-selector="record-video"] {
@@ -416,4 +421,28 @@ a[data-selector="record-video"] {
 
 a[data-selector="start-tutorial"] {
   visibility: hidden;
+}
+
+div[data-view-id="cid_14"] {
+  width: 100% !important;
+  height: 256px !important;
+}
+
+.playback {
+  width: 100% !important;
+  height: 256px !important;
+}
+
+.video-player-outer {
+  width: 100% !important;
+  height: 256px !important;
+}
+
+.video-player-content {
+  width: 100% !important;
+  height: 256px !important;
+}
+
+#textModal {
+  padding-left: 8px;
 }
