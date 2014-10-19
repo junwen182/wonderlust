@@ -5,7 +5,11 @@ var main = function(){
         
         var post = $('.status-box').val();
         
-        $('<li>').text(post).prependTo('.posts');
+        $('<li>').prependTo('.posts');
+
+        $('<p class="post-content">').text(post).prependTo('li:first')
+
+        $('<p class="poster-name">').text('Hee Won').prependTo('li:first');
         
         $('.status-box').val('');
         
@@ -38,7 +42,9 @@ var main = function(){
     
     $('.post-button').addClass('disabled');
     
-    
+    $(function() {
+        $('.banner').unslider();
+    });
 };
 
 $(document).ready(main);

@@ -5,6 +5,7 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://unslider.com/unslider.min.js"></script>
 
     <!-- Pacifico font -->
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -30,10 +31,41 @@
           <div class="modal-content">
             <div class="modal-body">
               <div class="body-container pin-modal">
-       
-                <div class="jumbotron">
-                  <i class="fa fa-play fa-4x play-button"></i>
+                
+
+        
+
+             
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <div class="jumbotron video-1">
+                          <i class="fa fa-play fa-4x play-button"></i>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="jumbotron video-2">
+                          <i class="fa fa-play fa-4x play-button"></i>
+                        </div>                        
+                      </div>
+                      <div class="item">
+                        <div class="jumbotron video-3">
+                          <i class="fa fa-play fa-4x play-button"></i>
+                        </div>                        
+                      </div>
+                    </div>
+                  
+                  <a class="left carousel-control" id="carousel-buttons" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-chevron-left slider-button"></i>
+                  </a>
+                  <a class="right carousel-control" id="carousel-buttons" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-chevron-right slider-button"></i>
+                  </a>
                 </div>
+                <!-- End Carousel -->
+
+
 
                 <!--
                 <div class="jumbotron video-player-holder">
@@ -45,7 +77,12 @@
 
                   <!--Select Location-->
                   <div class="location-holder">
-
+                    <row>
+                      <div class="col-xs-12 location-details">
+                        <span class="attraction">Eiffel Tower</span>
+                        <span class="location">Champ de Mars, 75007, Paris</span>
+                      </div>
+                    </row>
                   </div>
 
                   <!--Comments-->
