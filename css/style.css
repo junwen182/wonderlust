@@ -1,9 +1,19 @@
 /* Layout */
+@import url("../fonts/stylesheet.css");
 
 body {
   width: 100%;
   background-image: url('../img/bg-map.png');
   background-size: cover;
+}
+
+.testing-for-junwen {
+  font-family: 'focobold', sans-serif;
+  /*  use the following: 
+      font-family: 'focobold';
+      font-family: 'focoblack';
+      font-family: 'focolight';
+      font-family: 'focoregular'; */
 }
 
 .container {
