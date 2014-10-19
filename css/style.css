@@ -13,7 +13,10 @@
 
 body {
   width: 100%;
-  background-image: url('../img/bg-map.png');
+  background: url(../img/bg-map.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   font-family: "focolight";
 }
@@ -24,7 +27,8 @@ body {
 }
 
 
-/* Check In section */
+/* Check In
+=================================================================*/
 
 .check-in-holder {
   text-align: center;
@@ -102,7 +106,8 @@ body {
 }
 
 
-/* Pin */
+/* Pin 
+=================================================================*/
 
 
 #carousel-buttons {
@@ -277,3 +282,110 @@ body {
       border-radius: 0 0 5px 5px;
       border: none;
     }
+
+/* Landing Page
+=================================================================*/
+
+
+.landing-page-holder {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+#landing-page-bg {
+  background: url(../img/beach.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo-holder {
+  padding: 0 15px;
+  margin-top: 150px;
+}
+
+.logo-holder img {
+  width: 100%;
+}
+
+.headlines {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-divider {
+  height: 3px;
+  background-color: white;
+  width: 54%;
+  margin: 23px auto 13px auto;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.landing-subcopy {
+  color: white;
+  font-family: "focoregular";
+  font-size: 1.3em;
+}
+
+/* Form */
+
+.form-container {
+  max-width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-top: 12px;
+  opacity: 0.97;
+}
+
+.enter-info {
+  width: 100%;
+  height: 65px;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #f9f7f7;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.enter-info:hover {
+  background-color: #f0f0f0;
+}
+
+.enter-info:focus {
+  outline: none;
+}
+
+.input-top {
+  border-radius: 3px 3px 0px 0px;
+}
+
+.submit-area {
+  max-width: 100%;
+}
+
+.submit-button {
+  font-family: "Pacifico";
+  max-width: 100%;
+  height: 65px;
+  background-color: #db8c53;
+  border: none;
+  border-radius: 0px 0px 3px 3px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 1.6em;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(200,35,42,1);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(200,35,42,1);
+  box-shadow: 0px 2px 0px 0px rgba(200,35,42,1);
+}
+
+.submit-button:hover {
+  background-color: #d4854c;
+}
+
