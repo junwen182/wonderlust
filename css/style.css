@@ -317,7 +317,7 @@ body {
 .logo-divider {
   height: 3px;
   background-color: white;
-  width: 54%;
+  width: 43%;
   margin: 23px auto 13px auto;
   border-radius: 4px;
   opacity: 0.9;
@@ -326,7 +326,7 @@ body {
 .landing-subcopy {
   color: white;
   font-family: "focoregular";
-  font-size: 1.3em;
+  font-size: 1.45em;
 }
 
 /* Form */
