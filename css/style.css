@@ -1,7 +1,9 @@
 /* Layout */
 
 body {
-
+  width: 100%;
+  background-image: url('../img/bg-map.png');
+  background-size: cover;
 }
 
 .container {
@@ -15,10 +17,15 @@ width: 100%;
 .check-in-holder {
   text-align: center;
   width: 100%;
-  padding: 10px;
+  padding: 13px;
   border: 1px solid #ebebeb;
   position: fixed;
   bottom: 0;
+  background-color: white;
+}
+
+.check-in-link:hover {
+  text-decoration: none;
 }
 
 .check-in-button {
@@ -29,7 +36,7 @@ width: 100%;
   width: 100%;
   margin: 0px auto;
   border-radius: 4px;
-  padding: 5px;
+  padding: 17px;
   -webkit-box-shadow: 0px 2px 0px 0px #d48146;
   -moz-box-shadow: 0px 2px 0px 0px #d48146;
   box-shadow: 0px 2px 0px 0px #d48146;
@@ -43,22 +50,41 @@ width: 100%;
 
 .check-in-popup {
   width: 100%;
-  background-color: #fff;
+  opacity: 0.99;
 }
 
 .check-in-method {
   width: 50%;
-  border: solid black 1px;
+  border: solid #ebebeb 1px;
   display: inline-block;
   text-align: center;
+  padding: 50px 0px 45px;
 }
 
 .camera {
   float: left;
   background-color: #e2ece2;
-  padding: 50px 10px 10px 10px;
+  border-radius: 4px 0px 0px 4px;
 }
 
-.fa {
+.gallery {
+  border-radius: 0px 4px 4px 0px;
+  background-color: white;
+}
 
+.camera-icon {
+  color: white;
+}
+
+.gallery-icon {
+  color: #e2ece2;
+}
+
+.modal-header {
+  border: none;
+  padding-bottom: 0px;
+}
+
+.modal-body {
+  padding: 0px;
 }

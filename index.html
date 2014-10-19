@@ -15,22 +15,32 @@
 
   <body>
 
-    <!-- Check In Pop Up -->
-    <div class = "container">
-      <div class="check-in-popup">
-        <div class="check-in-method camera">
-          <i class="fa fa-camera fa-4x"></i>
-        </div>
-        <div class="check-in-method gallery">
-          <i class="fa fa-picture-o fa-4x"></i>
-        </div>
-      </div>
-    </div>
+    <a >Text me the link</a>
 
     <!-- Check In Bottom Box -->
     <div class="check-in-holder">
-      <div class="check-in-button">
-        Check In
+      <a class="check-in-link" data-toggle="modal" href="#textModal">
+        <div class="check-in-button" data-toggle="modal">
+          Check In
+        </div>
+      </a>
+    </div>
+
+    <!-- Modal window -->
+    <div class="modal fade" id="textModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="check-in-popup">
+              <div class="check-in-method camera">
+                <i class="fa fa-camera fa-4x camera-icon"></i>
+              </div>
+              <div class="check-in-method gallery">
+                <i class="fa fa-picture-o fa-4x gallery-icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
