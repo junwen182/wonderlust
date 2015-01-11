@@ -1,52 +1,219 @@
 <!DOCTYPE html>
  <html> 
   <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+
+
+
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="http://assets.ziggeo.com/css/ziggeo-betajs-player.min.css"/>
     <script src="./js/jquery-1.11.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="http://assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
-    <script>ZiggeoApi.token = "a66a10279f51ef5d416edb09c78851ff";</script>
 
-    <!-- Pacifico font -->
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- Slider -->
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <script src="./js/jquery.flexslider-min.js"></script>
+
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Load Flexslider -->
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+    </script>
 
     <!-- font awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
+
 
   <body>
 
-    <a class="testing-for-junwen">Text me the link</a>
+    <!-- Navbar -->
+    <div class="navbar navigation">
+      <div class="container">
 
-    <!-- Check In Bottom Box -->
-    <div class="check-in-holder">
-      <a class="check-in-link" data-toggle="modal" href="#textModal">
-        <div class="check-in-button" data-toggle="modal">
-          Check In
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-logo" href="index.html"><img src="img/saaslytics.png"/></a>
         </div>
-      </a>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#features">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="pricing.html#faq">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="login-button">Log In</a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Modal window -->
-    <div class="modal fade" id="textModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="check-in-popup">
-              <div class="check-in-method camera">
-                <i class="fa fa-camera fa-4x camera-icon"></i>
-              </div>
-              <div class="check-in-method gallery">
-                <i class="fa fa-picture-o fa-4x gallery-icon"></i>
-              </div>
+
+
+    <!-- Banner -->
+
+    <div class="jumbotron banner">
+      <div class="container">
+        <row>
+          <div class="col-sm-5">
+            <h1 class="headline">No-Hassle Performance Tracking for SaaS Apps</h1>
+            <p class="subheadline">Transform Your Payments Data Into Actionable Insights That Boost Revenue And Reduce Churn</p>
+            <a href="pricing.html" class="getstarted-button">GET STARTED</a>
+          </div>
+        </row>
+      </div>
+      <div class="available">
+        <p>Now available for</p><img src="img/braintree.png"/>
+      </div>
+    </div>
+
+    <!-- Overview -->
+
+    <div class="overview">
+      <div class="container">
+
+        <row>
+          <h2>Grow sales and exceed your business goals</h2>
+        </row>
+
+        <row>
+          <div class="col-sm-4 overview-prop">
+            <img src="img/saaslytics-real-time-saas-metrics.png"/>
+            <h3>Real-time SaaS Metrics</h3>
+          </div>
+
+          <div class="col-sm-4 overview-prop">
+            <img src="img/saaslytics-goals.png"/>
+            <h3>Set, Track, and Exceed Goals</h3>
+          </div>
+
+          <div class="col-sm-4 overview-prop">
+            <img src="img/saaslytics-notifications-reports.png"/>
+            <h3>Reporting & Event Notifications</h3>
+          </div>
+        </row>
+
+      </div>
+    </div>
+
+    <!-- Features -->
+
+    <div class="feature-section" id="features">
+      <div class="container">
+        <div class="row feature">
+            <div class="col-sm-5">
+              <h2 class="feature-h2">Make Better Decisions, Ask Better Questions</h2>
+              <p class="blue-p p-left">Saaslytics provides dozens of actionable metrics in real-time to help you make data-driven decisions. Gone are the days when it took you hours just to calculate your critical metrics. We do all the number crunching for you because we believe your time is much better spent acting on your metrics  and not calculating them.</p>
             </div>
+            <div class="col-sm-7">
+              <img class="mobile-fix" src="img/saaslytics-real-time-metrics-dashboard.png"/>
+            </div>
+        </div>
+
+        <div class="row feature">
+          <row>
+            <div class="col-sm-5 col-sm-push-7">
+              <h2 class="feature-h2">Motivate Your Team, Exceed Your Targets</h2>
+              <p class="blue-p p-right">Metrics without meaning are well, meaningless. Turn your metrics into a vehicle that will help motivate and engage your entire team. Set ambitious targets and challenge everyone on your team to come up with innovative ways to meet the company’s goals. Saaslytics makes it easy for companies to set goals around their SaaS metrics. Just tell us which goals you want to track, the target and the due date - we handle the rest.</p>
+            </div>
+            <div class="col-sm-7 col-sm-pull-5">
+              <img class="img-left" src="img/saaslytics-real-time-metrics-dashboard.png"/>
+            </div>
+          </row>
+        </div>
+
+        <div class="row feature feature-last">
+          <div class="col-sm-5">
+            <h2 class="feature-h2">Never Miss an Important Event</h2>
+            <p class="blue-p p-left">Increase your team&#39s responsiveness to important performance-related events, such as new customer sign-ups or cancellations. Our flexible solution allows you to ensure that each alert immediately goes to the critical team member that can take action. Use our weekly and monthly reports to share your  performance metrics with investors and other interested parties.</p>
+          </div>
+          <div class="col-sm-7">
+            <img src="img/saaslytics-notifications-reports-2.png" class="notifications-img"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CTA section -->
+
+    <div class="jumbotron cta-section">
+      <div class="container">
+        <h1>Make performance tracking easy today.</h1>
+
+        <div class="flexslider">
+          <img src="img/saaslytics-quote.png" class="quote-mark"/>
+          <ul class="slides">
+            <li>
+              <p>It's been a long time since an analytics app made me smile. I'm so glad I found Saaslytics.</p>
+              <p class="customer">- Todd Linden, CEO, Samsung</p>
+            </li>
+            <li>
+              <p>Saaslytics is such a powerful analytics tool. If you are serious about customer engagement and retention, you should really check it out.</p>
+              <p class="customer">- Todd Linden, CEO, Samsung</p>
+            </li>
+            <li>
+              <p>In just one week, Saaslytics helped us grow MRR by 15% through simple insights into our pricing plans.</p>
+              <p class="customer">- Todd Linden, CEO, Samsung</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="testimonials">
+        </div>
+
+        <a href="pricing.html" class="getstarted-button">GET STARTED</a>        
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" class="footer-logo"><img src="img/saaslytics.png"/></a>
+          </div>
+          <div class="col-sm-9">
+
+            <div class="navigation navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="pricing.html#faq">FAQ</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="mailto:kareem@saaslytics.io">Contact</a></li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
 
-
   </body>
+
+  <!-- Slider Javascript -->
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      $('.flexslider').flexslider({
+        slideshowSpeed: 2500,
+        animation: "slide",
+        animationSpeed: 300,
+        controlNav: false
+      });
+    });
+  </script>
 </html>
